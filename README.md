@@ -1,5 +1,7 @@
 # ArduinoQuad
 
+Arduino and Android source code for use with the A1705 chip with an Arduino board.  Control the Hubsan X4 Quad 
+with an Android device using the A7105 module as opposed to Bluetooth, Wifi, or other communication method.
 
 ## License
 
@@ -13,25 +15,25 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Description
+### Steps
 
-Arduino and Android source code for use with the A1705 chip with an Arduino board.  Control the Hubsan X4 Quad 
-with an Android device using the A7105 module as opposed to Bluetooth, Wifi, or other communication method.
-
-Steps: Put together Arduino with A1705
-       Program Arduino
-       Program Android 
-       Build/Buy Quadcopter
-       Fly
+Put together Arduino with A1705
+Program Arduino
+Program Android 
+Build/Buy Quadcopter
+Fly
        
+### Supplies Needed
+
 Arduino Due
 Android Device
-a7105 Transceiver Module
+A1705 Transceiver Module
 Hubsan X4 Quad (or spare parts to build your own w/o controller)
 OTG Cable
 
+### Build the Board w/ A1705
 
-1: Identify the 6 pins on your A7105 board that we need, on the
+1: Identify the 6 pins on your A1705 board that we need, on the
 following diagram these are:
   Left hand side:  GND
   Right hand side: SDIO, SCK, SCS, GND, VCC
@@ -71,8 +73,10 @@ for a diagram of where MOSI is.
 12: Wire pin 10 on the Due to 'SCS' on the A7105
 
 
-To fly: Power on Quadcopter
-        Connect Arduino to Android Device via OTG cable, and open application on Android device when prompted
-        When the lights stop blinking on the quad, it is bound to the a1705 module
-        Fly
+###To fly 
+
+Power on Quadcopter
+Connect Arduino to Android Device via OTG cable, and open application on Android device when prompted
+When the lights stop blinking on the quad, it is bound to the a1705 module
+Fly
         
