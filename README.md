@@ -18,17 +18,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ### Steps
 
 Put together Arduino with A1705
+
 Program Arduino
+
 Program Android 
+
 Build/Buy Quadcopter
+
 Fly
        
 ### Supplies Needed
 
 Arduino Due
+
 Android Device
+
 A1705 Transceiver Module
+
 Hubsan X4 Quad (or spare parts to build your own w/o controller)
+
 OTG Cable
 
 ### Build the Board w/ A1705
@@ -37,7 +45,6 @@ OTG Cable
 following diagram these are:
   Left hand side:  GND
   Right hand side: SDIO, SCK, SCS, GND, VCC
-
 
 2: Solder 2 cm lengths of solid core wire too each of these pins.
 Once soldered on I pull the insulation off the wires giving me six
@@ -76,7 +83,10 @@ for a diagram of where MOSI is.
 ###To fly 
 
 Power on Quadcopter
+
 Connect Arduino to Android Device via OTG cable, and open application on Android device when prompted
+
 When the lights stop blinking on the quad, it is bound to the a1705 module
+
 Fly
         
